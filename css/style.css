@@ -1,7 +1,8 @@
 body {
     background-color: #F4F1EA;
     color: #14162B;
-    font-family: Arial, sans-serif;
+    font-family:'Poppins', Arial, sans-serif;
+    margin: 0;
 
 }
 
@@ -27,14 +28,121 @@ footer {
 }
 
 main {
-max-width: 600px;
-margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.card {
+
+    background-color: white;
+    padding: 24px;
+    margin: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8xp rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+table {
+
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #14162B;
+}
+
+
+
+th {
+    background-color: #FF8A4C;
+}
+
+
+
+head {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #14162B;
+color: white;
+padding: 16xp 32px;
+}
+
+nav {
+
+
+display: flex;
+gap: 24px;
+}
+
+nav a {
+color: purple;
+text-decoration:none ;
+}
+
+
+.gostos {
+
+
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.gostos li {
+background-color: #ffc6ff;
+padding: 8px 16px;
+border-radius: 20px;
+
+}
+
+img {
+
+    max-width: 100%;
+}
+
+
+@media (max-width: 600px) {
+header {
+
+    flex-direction: column;
+    gap:8px
+}
+
+h1 {
+font-size: 28px;
+}
+.projetos {
+
+grid-template-columns: 1fr;
+
 
 }
 
 
 
-img {
+}
 
-    max-width: 100%;
+
+nav a:hover {
+
+    color:aquamarine;
+
+}
+
+.card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.projetos {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 24px;
+
 }
