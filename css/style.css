@@ -1,7 +1,7 @@
 body {
     background-color: #F4F1EA;
     color: #14162B;
-    font-family:'Poppins', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
 
 }
@@ -48,7 +48,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #14162B;
 }
 
@@ -61,24 +62,24 @@ th {
 
 
 head {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #14162B;
-color: white;
-padding: 16xp 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14162B;
+    color: white;
+    padding: 16xp 32px;
 }
 
 nav {
 
 
-display: flex;
-gap: 24px;
+    display: flex;
+    gap: 24px;
 }
 
 nav a {
-color: purple;
-text-decoration:none ;
+    color: purple;
+    text-decoration: none;
 }
 
 
@@ -93,34 +94,53 @@ text-decoration:none ;
 }
 
 .gostos li {
-background-color: #ffc6ff;
-padding: 8px 16px;
-border-radius: 20px;
+    background-color: #ffc6ff;
+    padding: 8px 16px;
+    border-radius: 20px;
 
 }
 
 img {
 
     max-width: 100%;
+
 }
+
+.escuro {
+    background-color: #14162B;
+}
+
+.escuro .card {
+
+    background-color: #1f2240;
+
+}
+
+.escuro h2 {
+    color: #F4F1EA;
+
+}
+
+
 
 
 @media (max-width: 600px) {
-header {
+    header {
 
-    flex-direction: column;
-    gap:8px
-}
+        flex-direction: column;
+        gap: 8px
+    }
 
-h1 {
-font-size: 28px;
-}
-.projetos {
+    h1 {
+        font-size: 28px;
+    }
 
-grid-template-columns: 1fr;
+    .projetos {
+
+        grid-template-columns: 1fr;
 
 
-}
+    }
 
 
 
@@ -129,20 +149,20 @@ grid-template-columns: 1fr;
 
 nav a:hover {
 
-    color:aquamarine;
+    color: aquamarine;
 
 }
 
 .card:hover {
-transform: translateY(-6px);
-box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 
 }
 
 
 .projetos {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 
 }

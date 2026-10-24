@@ -16,3 +16,13 @@ console.log(saudacao);
 
 const titulo = document.querySelector("h1");
 titulo.textContent = saudacao + ", eu sou a " + nome;
+
+const botao = document.querySelector("#tema");
+botao.addEventListener("click", function () {
+    document.body.classList.toggle("escuro");
+    if(document.body.classList.contains("escuro")){
+        botao.textContent = "Modo claro";
+    } else{
+        botao.textContent = "Modo escuro";
+    }
+});
