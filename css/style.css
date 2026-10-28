@@ -166,3 +166,6 @@ nav a:hover {
     gap: 24px;
 
 }
+.erro {
+    color: red;
+}
