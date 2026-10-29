@@ -26,3 +26,14 @@ botao.addEventListener("click", function () {
         botao.textContent = "Modo escuro";
     }
 });
+
+const gostos = ["Animes", "Atersanato", "Programação", "Musica", "Esporetes"];
+console.log(gostos.length);
+console.log(gostos[0]);
+const lista = document.querySelector("#gostos");
+for (const gosto of gostos) {
+    const item= document.createElement("li");
+    item.textContent =  gosto;
+    lista.appendChild(item);
+
+}
